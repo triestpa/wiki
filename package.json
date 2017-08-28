@@ -44,7 +44,7 @@
     "should": "^9.0.0"
   },
   "scripts": {
-    "postuninstall": "npm run build",
+    "postinstall": "npm run build",
     "build": "babel src --out-dir dist --source-maps true",
     "test": "node_modules/.bin/_mocha --no-colors --compilers js:babel-register",
     "cover": "babel-node ./node_modules/istanbul/lib/cli cover node_modules/.bin/_mocha",
